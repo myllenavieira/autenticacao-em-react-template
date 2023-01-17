@@ -8,10 +8,10 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/admin"} element={<AdminPage />} />
         <Route path={"/"} element={<HomePage />} />
-        <Route path={"*"} element={<ErrorPage />} />
+        <Route path={"/admin"} element={<AdminPage />} />
         <Route path={"/users/:id"} element={<UserPage />} />
+        <Route path={"*"} element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
